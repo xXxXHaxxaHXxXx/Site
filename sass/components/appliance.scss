@@ -1,0 +1,78 @@
+.appliance {
+  background: $color-white;
+  margin-top: 30px;
+  border-top: 1px solid #e6e6e6;
+
+  &__item {
+    margin-bottom: 20px;
+
+    @media(min-width: 1100px) {
+      display: flex;
+      margin: 0;
+    }
+
+    &--reversed {
+      @media(min-width: 1100px) {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__col {
+    padding: 20px;
+    text-align: center;
+
+    @media(min-width: 1100px) {
+      padding: 100px 40px;
+      width: 50%;
+    }
+
+    &--image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right bottom, $color-blue, #42aaff);
+    }
+  }
+
+  &__image {
+    width: 70px;
+    height: 70px;
+
+    @media(min-width: 1100px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 500;
+
+    @media(min-width: 1100px) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    margin: 20px 0;
+    line-height: 1.6;
+
+    @media(min-width: 1100px) {
+      font-size: 20px;
+    }
+
+    &--problems {
+      opacity: 0.6;
+    }
+  }
+
+  &__button {
+    font-size: 18px;
+
+    @media(min-width: 1100px) {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.reviews {
+  padding: 40px 20px 40px 20px;
+  background: $color-white;
+
+  @media(min-width: 768px) {
+    padding: 80px 20px 80px 20px;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+
+    @media(min-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+
+  &__item {
+    position: relative;
+    height: 220px;
+    padding: 15px;
+    border-radius: 5px;
+    background: $color-grey-3;
+
+    @media(min-width: 768px) {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 10px;
+      right: 10px;
+      width: 100px;
+      height: 100px;
+      background: url('../images/quote.svg') no-repeat;
+      opacity: 0.1;
+    }
+  }
+
+  &__quote {
+    color: #212121;
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__image {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+}

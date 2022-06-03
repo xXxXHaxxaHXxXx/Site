@@ -1,0 +1,26 @@
+.prices {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-top: 1px solid $color-border;
+
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__quote {
+    font-family: 'Georgia', sans-serif;
+    font-style: italic;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-weight: 400;
+  }
+}

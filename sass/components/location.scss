@@ -1,0 +1,24 @@
+.location {
+  padding: 80px 20px 0px 20px;
+  background: $color-white;
+
+  &__header {
+    margin-bottom: 20px;
+
+    @media(min-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__body {
+    margin: 0 -20px;
+    min-height: 50vw;
+    background: url('../images/map.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media(min-width: 768px) {
+      min-height: 40vw;
+    }
+  }
+}
